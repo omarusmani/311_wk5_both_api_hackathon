@@ -4,7 +4,7 @@ Read this ENTIRE document before beginning work.
 
 ## Collaboration
 
-ONE person from the group will fork this repo from ACA. That person will give everyone else permissions as a "collaborator". From that point on, you will all clone THE ONE repo and your changes will be in the form of __pull requests__. For each change/ticket you will create a new branch and work from there. Remember to always pull the latest from the master branch before you being on a new task.
+ONE person from the group will fork this repo from ACA. That person will give everyone else permissions as a "collaborator". From that point on, you will all clone THE ONE repo and your changes will be in the form of __pull requests__. For each change/ticket you will create a new branch and work from there. Remember to always pull the latest from the master branch before you begin on a new task.
 
 _Adding a collaborator_
 <br />
@@ -40,7 +40,7 @@ _Note: Many tasks are intentionally vague. It's up to you to learn/google some o
 
 5. Type `mysql` in a new terminal
 
-6. If you get a "command not found error you need to add the command to your path. Run the following command to do that: `export PATH=$PATH:/usr/local/mysql/bin`
+6. If you get a "command not found error" you need to add the command to your path. Run the following command to do that: `export PATH=$PATH:/usr/local/mysql/bin`
 
 #### Connect to Google Cloud
 
@@ -48,7 +48,7 @@ We will use ONE person's Google Cloud database for this assignment. The steps fo
 
 1. Use the following command to connect to your Google Cloud database
   * `mysql -u root -h <HOST IP FROM WORKBENCH> -p`
-  * You wil be prompted for a password
+  * You will be prompted for a password
   * This is very similar to connecting through MySQL Workbench
   * [Additional information](https://stackoverflow.com/questions/15872543/access-mysql-remote-database-from-command-line)
 
@@ -104,7 +104,7 @@ Let's get started...
 
 * Type `npm start` in the terminal. Did you see the log?
 
-* Change the work "testing" to "re-testing". Did it re-load with the new log?
+* Change the word "testing" to "re-testing". Did it re-load with the new log?
 
 * Setup is complete
 
@@ -179,9 +179,9 @@ Let's get started...
 
 * Update the `getEmployees` function so that it calls the database, __selecting all fields from the employees table but limiting the results to 50__. Use `res.json` to return the results to the user
 
-* Update the `getEmployeesById` function so that it calls the database, __selecting all fields from the employees table where the emp_no matches the id query parameter__. The should return one result. Use `res.json` to return the result to the user
+* Update the `getEmployeesById` function so that it calls the database, __selecting all fields from the employees table where the emp_no matches the id query parameter__. This should return one result. Use `res.json` to return the result to the user
 
-* Update the `getEmployeesByFirstName` function so that it calls the database, __selecting all fields from the employees table where the first_name matches the first_name query parameter__. The could return multiple results. Use `res.json` to return the results to the user
+* Update the `getEmployeesByFirstName` function so that it calls the database, __selecting all fields from the employees table where the first_name matches the first_name query parameter__. This could return multiple results. Use `res.json` to return the results to the user
 
 #### Salaries and Departments
 
