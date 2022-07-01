@@ -4,6 +4,9 @@ require("dotenv").config();
 
 console.log(process.env.DB_HOST)
 
+
+
+
 const {
   DB_HOST,
 DB_USER,
