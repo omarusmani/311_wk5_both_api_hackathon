@@ -6,6 +6,6 @@ router.get('/MOCK_DATA', MOCK_DATAController.getAllUsers)
 router.get('/MOCK_DATA/:id', MOCK_DATAController.getUserById)
 router.post('/MOCK_DATA', MOCK_DATAController.createUser)
 router.put('/MOCK_DATA/:id', MOCK_DATAController.updateUserById)
-router.delete('/MOCK_DATA/:first_name', MOCK_DATAController.deleteUserByFirstName)
+router.delete('/MOCK_DATA/:id', MOCK_DATAController.deleteUserById)
 
 module.exports = router

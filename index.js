@@ -3,11 +3,10 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 4002;
 const carsRoute = require("./routes/CARS");
-// drug
-// mock_data
+const mockDataRoute = require("./routes/MOCK_DATA");
 
 app.use(express.json());
-app.use(carsRoute);
+app.use(carsRoute, mockDataRoute);
 
 app.get("/", (req, res) => {
   res.send("Welcome to our server!");
